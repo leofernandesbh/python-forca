@@ -154,4 +154,4 @@ def main(page: ft.Page):
     page.add(layout)        
 
 if __name__ == "__main__":
-    ft.app(target=main, assets_dir='assets')
+    ft.app(target=main, view = ft.AppView.FLET_APP, assets_dir='assets')
