@@ -20,10 +20,14 @@ def letter_to_guess(letter):
 
 def main(page: ft.Page):
     page.title = "Jogo da Forca"
+    page.window_width = 490
+    page.window_height = 1250
     page.window_min_width = 490
     page.window_min_height = 1250
+    page.window_always_on_top = True
     page.bgcolor = ft.colors.BROWN_600
     page.padding = ft.padding.only(left=16, right=16, top=16, bottom=16)
+    # page.scroll = ft.ScrollMode.AUTO
     
     available_words = [
         'python','flet','programador','react','javascript','node',
